@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+#main {
+   background-color: #fffdfa;
+}
+
+#inputpanel {
+   position: absolute;
+   top: 5%;
+   left: 20%;
+   height: 10%;
+   width: var(--inputfield-size);
+}
+
+#inputfield {
+   position: absolute;
+   left: 5%;
+   width: 80%;
+
+   padding-left: 20px;
+
+   outline: none;
+   border: 2px solid #121212;
+   border-radius: 30px;
+
+   font-size: 30px;
+   font-family: 'Ubuntu', sans-serif;
+   color: #050022;
+}
+
+#inputbutton {
+   position: absolute;
+   left: 90%;
+   width: 8%;
+
+   border: none;
+   background: transparent;
+
+   font-size: 30px;
+   font-family: 'Ubuntu', sans-serif;
+   color: #050022;
+}
+
+#inputbutton span:hover {
+   color: #444444;
+   cursor: pointer;
+}
+
+#inputbutton span:active {
+   color: #333333;
+}
+
+#todosection {
+   position: absolute;
+   left: 20%;
+   top: 15%;
+   width: var(--inputfield-size);
+}
+
+#todo {
+   height: 20%;
+   width: var(--inputfield-size);
+
+   padding: 20px;
+
+   font-size: 30px;
+   font-family: 'Ubuntu', sans-serif;
+   color: #050022;
+}
+
+#todo:hover {
+   transition-duration: 200ms;
+   background-color: #f0f0f0;
+}
+
+#removebutton {
+   position: absolute;
+   left: 85%;
+
+   background: transparent;
+   border: none;
+
+   font-size: 30px;
+   font-family: 'Ubuntu', sans-serif;
+   color: hsl(0, 100%, 58%);
+}
+
+#removebutton span:hover {
+   color: hsl(0, 61%, 36%);
+}
+
+@media (min-width: 1024px) {
+   :root {
+      --inputfield-size: 900px;
+   }
+}
+@media (min-width: 764px) and (max-width: 1024px) {
+   :root {
+      --inputfield-size: 600px;
+   }
+}
+@media (max-width: 764px) {
+   :root {
+      --inputfield-size: 300px;
+   }
+}
