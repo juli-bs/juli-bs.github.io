@@ -1,3 +1,8 @@
+if(JSON.parse(localStorage("todos")) == null) {
+   let temp = [];
+   localStorage.setItem("todos", JSON.stringify(temp));
+}
+
 let todos = [];
 todos = JSON.parse(localStorage.getItem('todos'));
 
