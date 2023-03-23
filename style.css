@@ -108,7 +108,7 @@
 @media (min-width: 1024px) {
    :root {
       --inputfield-size: 900px;
-      --edit-left: 75%;
+      --edit-left: 70%;
    }
 }
 @media (min-width: 764px) and (max-width: 1024px) {
