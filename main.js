@@ -23,6 +23,12 @@ function removeTodo(i) {
    showTodos();
 }
 
+function editTodo(i) {
+   inputfield.value = todos[i];
+   todos.splice(i, 1);
+   showTodos();
+}
+
 function showTodos() {
    let text = "";
    for(let i = 0; i < todos.length; i++) {
@@ -32,6 +38,7 @@ function showTodos() {
          text += "<div id='todo' style='border-bottom: 2px solid #050022;'>" + todos[i];
       }
       text += "<button id='removebutton' onclick='removeTodo(" + i + ");'><span>Remove</span></button>";
+      text += "<button id='editbutton' onclick='editTodo(" + i + ");'><span>Edit</span></button>";
       text += "</div>";
    }
 

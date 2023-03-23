@@ -89,6 +89,22 @@
    color: hsl(0, 61%, 36%);
 }
 
+#editbutton {
+   position: absolute;
+   left: 75%;
+
+   background: transparent;
+   border: none;
+
+   font-size: 30px;
+   font-family: 'Ubuntu', sans-serif;
+   color:hsl(249, 100%, 58%);
+}
+
+#editbutton span:hover {
+   color:hsl(249, 68%, 22%);
+}
+
 @media (min-width: 1024px) {
    :root {
       --inputfield-size: 900px;
